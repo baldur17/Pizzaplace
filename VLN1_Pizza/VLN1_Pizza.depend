@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1512318420 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\main.cpp
+	<iostream>
+	"mainUI.h"
+	"managementUI.h"
+	<stdlib.h>
+
+1512346995 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\mainui.h
+	"managementUI.h"
+	"bakerUI.h"
+	"salesUI.h"
+	"deliveryUI.h"
+
+1512347578 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\mainui.cpp
+	"mainUI.h"
+	<iostream>
+	<stdlib.h>
+
+1512320680 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\managementui.h
+	"stdlib.h"
+	<iostream>
+
+1512322797 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\managementui.cpp
+	"managementUI.h"
+
+1512346636 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\bakerui.cpp
+	"bakerUI.h"
+
+1512322080 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\bakerui.h
+	"stdlib.h"
+	<iostream>
+
+1512346799 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\salesui.cpp
+	"salesUI.h"
+
+1512346794 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\salesui.h
+	"stdlib.h"
+	<iostream>
+
+1512346904 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\deliveryui.cpp
+	"deliveryUI.h"
+
+1512346904 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\deliveryui.h
+	"stdlib.h"
+	<iostream>
+
