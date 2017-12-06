@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1512504090 source:c:\users\notandi\desktop\háskólinn\employee_records\main.cpp
+	<iostream>
+	"Employee.h"
+	"MainUI.h"
+	<stdlib.h>
+
+1512507976 c:\users\notandi\desktop\háskólinn\employee_records\include\models\employee.h
+	<string>
+	<iostream>
+
+1512507976 source:c:\users\notandi\desktop\háskólinn\employee_records\src\models\employee.cpp
+	"Employee.h"
+
+1512431089 c:\users\notandi\desktop\háskólinn\employee_records\include\ui\mainui.h
+	"Employee_service.h"
+	<stdlib.h>
+	"Employee.h"
+	<string>
+
+1512506174 source:c:\users\notandi\desktop\háskólinn\employee_records\src\ui\mainui.cpp
+	"MainUI.h"
+	"Employee.h"
+	"Employee_service.h"
+	<iostream>
+	<string>
+
+1512507908 source:c:\users\notandi\desktop\háskólinn\employee_records\src\repository\record_repository.cpp
+	"Record_repository.h"
+
+1512506018 c:\users\notandi\desktop\háskólinn\employee_records\include\repository\record_repository.h
+	"Record_service.h"
+	<fstream>
+	"Employee.h"
+	<string>
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<sstream>
+
+1512522804 source:c:\users\notandi\desktop\háskólinn\employee_records\src\services\employee_service.cpp
+	"Employee_service.h"
+
+1512522631 c:\users\notandi\desktop\háskólinn\employee_records\include\services\employee_service.h
+	<vector>
+	"Record_repository.h"
+	"Invalid_ssn_exception.h"
+	"Employee.h"
+	<iostream>
+
+1512506127 c:\users\notandi\desktop\háskólinn\employee_records\include\services\record_service.h
+	<vector>
+	<Employee.h>
+	<stdlib.h>
+
+1512509422 source:c:\users\notandi\desktop\háskólinn\employee_records\include\services\record_service.cpp
+	"Record_service.h"
+
+1512522437 c:\users\notandi\desktop\háskólinn\employee_records\include\exceptions\invalid_ssn_exception.h
+
+1512522437 source:c:\users\notandi\desktop\háskólinn\employee_records\src\exceptions\invalid_ssn_exception.cpp
+	"Invalid_ssn_exception.h"
+
