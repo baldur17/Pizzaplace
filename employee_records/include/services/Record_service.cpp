@@ -1,8 +1,6 @@
 #include "Record_service.h"
-
-vector<Employee> Record_service::recieve_record(vector<Employee> vector_of_service, string ssn)
+void Record_service::recieve_record(vector<Employee> vector_of_service, string ssn)
 {
-    ///lesa ur vector record med tessu ssn
     vector<Employee> temp;
     for(unsigned int i = 0; i < vector_of_service.size(); i++)
     {
@@ -13,4 +11,10 @@ vector<Employee> Record_service::recieve_record(vector<Employee> vector_of_servi
         }
     }
     system("pause");
+    ///mainui.recieve_ssn_record(temp);
+    ///senda vector til mainui;
 }
+/*vector<Employee> Record_service::getVector()
+{
+    return record_repo.getVector();
+}*/

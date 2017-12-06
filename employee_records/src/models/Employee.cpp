@@ -18,7 +18,7 @@ Employee::Employee(string name, string ssn, double salary, int month, int year)
 }
 ostream& operator << (ostream& out, const Employee& employee)
 {
-    out << employee.name << "\t" << employee.ssn << "\t" << employee.salary << "\t" << employee.month << "\t" << employee.year << endl;
+    out << employee.name << " " << employee.ssn << " " << employee.salary << " " << employee.month << " " << employee.year << endl;
     return out;
 }
 istream& operator >> (istream& in, Employee& employee)
@@ -33,6 +33,18 @@ string Employee::getName()
 string Employee::getSSN()
 {
     return this->ssn;
+}
+double Employee::getSalary()
+{
+    return this->salary;
+}
+int Employee::getMonth()
+{
+    return this->month;
+}
+int Employee::getYear()
+{
+    return this->year;
 }
 /*istream& operator >> (istream& in, Employee& employee)
 {

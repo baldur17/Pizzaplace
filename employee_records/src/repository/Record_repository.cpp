@@ -13,10 +13,11 @@ void Record_repository::add_record(const Employee& employee)
     {
         /// throw error
     }
+    ///calla í fill_vector
+    ///calla í remove duplicates
 }
 void Record_repository::retrieve_record(string ssn)
 {
-    string str;
     ifstream fin;
     fin.open("employee_records.txt");
     if (fin.is_open())
@@ -32,22 +33,41 @@ void Record_repository::retrieve_record(string ssn)
             }
             vector_of_records.push_back(employee);
         }
-        /*for(unsigned int i = 0;i < vector_of_records.size();i++)
-        {
-            ///cout << vector_of_records[i].getName();
-            cout << vector_of_records.at(i);
-        }
-        system("pause");*/
         fin.close();
-        record_service.recieve_record(vector_of_records, ssn);
+        ///record_service.recieve_record(vector_of_records, ssn);
     }
-system("pause");
 }
-/*void Record_repository::retrieve_record()
+vector<Employee> Record_repository::getVector()
+{
+    return vector_of_records;
+}
+
+
+
+/*vector<Employee> Record_repository::fill_vector()
+{
+    ifstream fin;
+    fin.open("employee_records.txt");
+    if (fin.is_open())
+    {
+        vector_of_records.clear();
+        while(!fin.eof())
+        {
+            Employee employee;
+            fin >> employee;
+            if(fin.eof())
+            {
+                break;
+            }
+            vector_of_records.push_back(employee);
+        }
+        fin.close();
+    }
+    return vector_of_records;
+}*/
+/*void Record_repository::retrieve_record(string ssn)
 {
     string str;
-    vector<string> temp;
-    int counter = 0;
     ifstream fin;
     Employee employee;
     fin.open("employee_records.txt");
@@ -56,14 +76,11 @@ system("pause");
         vector_of_records.clear();
         while(getline(fin, str, ','))
         {
-            vector_of_records.push_back(str);
-            counter++;
+
+            system("pause");
+            //vector_of_records.push_back(str);
         }
-        for(unsigned int i = 0;i < vector_of_records.size();i++)
-        {
-            cout << vector_of_records.at(i);
-        }
-        system("pause");
         fin.close();
     }
+    //record_service.recieve_record(vector_of_records, ssn);
 }*/

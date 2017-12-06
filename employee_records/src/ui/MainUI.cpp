@@ -17,7 +17,7 @@ void MainUI::startUI()
         cout << "\t03. GET YEARLY SALARY FOR EMPLOYEE" << endl << endl;
         cout << "\t04. GET HIGHEST PAID EMPLOYEE" << endl << endl;
         cout << "\t05. EXIT" << endl << endl;
-        cout << "\tSelect Your Option <1-X> ";
+        cout << "\tSelect Your Option <1-5> ";
         cin >> input;
         validate_user_input(input);
     }
@@ -29,13 +29,35 @@ char MainUI::validate_user_input(char& input)
         {
             Employee employee;
             employee = write_employee();
+            try{
             emp_service.add_record(employee);
+            }
+            catch (Invalid_month_exception){
+                cout << endl;
+                cout << "\tInvalid Month!" << endl;
+                system("pause");
+            }
+            catch (Invalid_ssn_exception){
+                cout << endl;
+                cout << "\tInvalid SSN number!" << endl;
+                system("pause");
+            }
+            catch (Invalid_year_exception){
+                cout << endl;
+                cout << "\tInvalid Year!" << endl;
+                system("pause");
+            }
+            catch (Invalid_salary_exception){
+                cout << endl;
+                cout << "\tInvalid Salary!" << endl;
+                system("pause");
+            }
         }
     if (input == '2')
         {
             string ssn;
             cout << endl;
-            cout << "Enter Employee's SSN(10 Digits): ";
+            cout << "\tEnter Employee's SSN(10 Digits): ";
             cin >> ssn;
             try{
             emp_service.retrieve_record(ssn);
@@ -48,7 +70,13 @@ char MainUI::validate_user_input(char& input)
         }
     if (input == '3')
         {
-
+            string ssn;
+            int year;
+            cout << endl;
+            cout << "\tEnter Employee's SSN(10 digits): ";
+            cin >> ssn;
+            cout << "Enter The Year You Wish To Get Records From: ";
+            cin >> year;
         }
     if (input == '4')
         {
@@ -56,8 +84,7 @@ char MainUI::validate_user_input(char& input)
         }
     if (input == '5')
         {
-            input = '5';
-            return input;
+            exit(0);
         }
     return 0;
 }
@@ -83,3 +110,25 @@ Employee MainUI::write_employee()
     cin >> year;
     return Employee(name, ssn, salary, month, year);
 }
+void recieve_ssn_record(vector<Employee> record)
+{
+    for (unsigned int i = 0;i < record.size(); i++)
+    {
+        cout << endl;
+        cout << "Employee's Name:  " << record[i].getName();
+        cout << "Employee's SSN:   " << record[i].getSSN();
+        cout << "Employee's Salary " << record[i].getSalary();
+        cout << "Record For Month: " << record[i].getMonth(); ///syna manud ekki tolu hugsanlega
+        cout << "Record For Year   " << record[i].getYear();
+        cout << endl;
+        system("pause");
+    }
+}
+/*string MainUI::month_name(int month)
+{
+    if(month == 1)
+    {
+        month = "January";
+        return month;
+    }
+}*/

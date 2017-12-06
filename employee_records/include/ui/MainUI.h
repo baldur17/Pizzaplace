@@ -13,8 +13,11 @@ class MainUI
         void startUI();
         char validate_user_input(char &input);
         Employee write_employee();
+        void recieve_ssn_record(vector<Employee> record);
+        string month_name(int month);
     private:
         Employee_service emp_service;
+        ///Record_service rec_service;
 };
 
 #endif // MAINUI_H

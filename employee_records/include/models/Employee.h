@@ -14,6 +14,9 @@ class Employee
         friend istream& operator >> (istream& in, Employee& employee);
         string getName();
         string getSSN();
+        double getSalary();
+        int getMonth();
+        int getYear();
     private:
         string name;
         string ssn;

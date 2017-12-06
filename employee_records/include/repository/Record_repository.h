@@ -16,9 +16,11 @@ class Record_repository
     public:
         void add_record(const Employee& employee);
         void retrieve_record(string ssn);
+        vector<Employee> fill_vector();
+        vector<Employee> getVector();
     private:
         vector<Employee> vector_of_records;
-        Record_service record_service;
+        ///Record_service record_service;
 
 };
 

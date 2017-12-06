@@ -1,11 +1,28 @@
 #include "Employee_service.h"
 
-void Employee_service::add_record(const Employee& employee)
+void Employee_service::add_record( Employee& employee)
 {
-    ///validate
+    validate_ssn(employee.getSSN());
+    validate_month(employee.getMonth());
+    validate_year(employee.getYear());
+    validate_salary(employee.getSalary());
+
     record_repo.add_record(employee);
 }
 void Employee_service::retrieve_record(string ssn)
+{
+    validate_ssn(ssn);
+    ///record_repo.fill_vector();
+    ///recieve record i record_service;
+    record_repo.retrieve_record(ssn);
+}
+/*void Employee_service::retrieve_record_2(string ssn, int year)
+{
+    validate_ssn(ssn);
+    validate_year(year);
+    record_repo.retrieve_record(ssn);
+}*/
+void Employee_service::validate_ssn(string ssn)
 {
     if (ssn.length() != 10)
     {
@@ -21,5 +38,25 @@ void Employee_service::retrieve_record(string ssn)
             throw Invalid_ssn_exception();
         }
     }
-    record_repo.retrieve_record(ssn);
+}
+void Employee_service::validate_month(int month)
+{
+    if (month < 1 || month > 12)
+    {
+        throw Invalid_month_exception();
+    }
+}
+void Employee_service::validate_year(int year)
+{
+    if (year < 2000 || year > 2017)
+    {
+        throw Invalid_year_exception();
+    }
+}
+void Employee_service::validate_salary(double salary)
+{
+    if (salary < 0)
+    {
+        throw Invalid_salary_exception();
+    }
 }

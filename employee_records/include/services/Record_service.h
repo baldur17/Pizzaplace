@@ -9,8 +9,10 @@ using namespace std;
 class Record_service
 {
     public:
-        vector<Employee> recieve_record(vector<Employee> vector_of_service, string ssn);
+        void recieve_record(vector<Employee> vector_of_service, string ssn);
+        vector<Employee> getVector();
     private:
+        ///Record_repository record_repo;
 };
 
 #endif // RECORD_SERVICE_H
