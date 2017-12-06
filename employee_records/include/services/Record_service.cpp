@@ -11,8 +11,6 @@ void Record_service::recieve_record(vector<Employee> vector_of_service, string s
         }
     }
     system("pause");
-    ///mainui.recieve_ssn_record(temp);
-    ///senda vector til mainui;
 }
 /*vector<Employee> Record_service::getVector()
 {

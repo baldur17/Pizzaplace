@@ -1,8 +1,7 @@
 #ifndef RECORD_REPOSITORY_H
 #define RECORD_REPOSITORY_H
-#include "Record_service.h"
-#include <fstream>
 #include "Employee.h"
+#include <fstream>
 #include <string>
 #include <iostream>
 #include <vector>
@@ -18,6 +17,7 @@ class Record_repository
         void retrieve_record(string ssn);
         vector<Employee> fill_vector();
         vector<Employee> getVector();
+        vector<Employee> vector_filtered_ssn(vector<Employee> vector_of_records, string ssn);
     private:
         vector<Employee> vector_of_records;
         ///Record_service record_service;

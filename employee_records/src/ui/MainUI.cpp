@@ -1,8 +1,5 @@
 #include "MainUI.h"
-#include "Employee.h"
-#include "Employee_service.h"
-#include <iostream>
-#include <string>
+
 
 void MainUI::startUI()
 {
@@ -59,8 +56,11 @@ char MainUI::validate_user_input(char& input)
             cout << endl;
             cout << "\tEnter Employee's SSN(10 Digits): ";
             cin >> ssn;
+            vector<Employee> record;
             try{
-            emp_service.retrieve_record(ssn);
+            emp_service.validate_ssn(ssn);
+            record = emp_service.retrieve_record(ssn);
+            recieve_ssn_record(record);
             }
             catch (Invalid_ssn_exception){
                 cout << "Invalid SSN number!" << endl;
@@ -110,25 +110,83 @@ Employee MainUI::write_employee()
     cin >> year;
     return Employee(name, ssn, salary, month, year);
 }
-void recieve_ssn_record(vector<Employee> record)
+void MainUI::recieve_ssn_record(vector<Employee> record)
 {
     for (unsigned int i = 0;i < record.size(); i++)
     {
+        month_name(record[i].getMonth());
         cout << endl;
-        cout << "Employee's Name:  " << record[i].getName();
-        cout << "Employee's SSN:   " << record[i].getSSN();
-        cout << "Employee's Salary " << record[i].getSalary();
-        cout << "Record For Month: " << record[i].getMonth(); ///syna manud ekki tolu hugsanlega
-        cout << "Record For Year   " << record[i].getYear();
+        cout << "Employee's Name:  " << record[i].getName() << endl;
+        cout << "Employee's SSN:   " << record[i].getSSN() << endl;
+        cout << "Employee's Salary " << record[i].getSalary() << endl;
+        cout << "Record For Month: " << month_name(record[i].getMonth()) << endl; ///syna manud ekki tolu hugsanlega
+        cout << "Record For Year   " << record[i].getYear() << endl;
         cout << endl;
-        system("pause");
     }
+    system("pause");
 }
-/*string MainUI::month_name(int month)
+string MainUI::month_name(int month)
 {
+    string name_of_month;
     if(month == 1)
     {
-        month = "January";
-        return month;
+        name_of_month = "January";
+        return name_of_month;
     }
-}*/
+    if(month == 2)
+    {
+        name_of_month = "Febuary";
+        return name_of_month;
+    }
+    if(month == 3)
+    {
+        name_of_month = "Mars";
+        return name_of_month;
+    }
+    if(month == 4)
+    {
+        name_of_month = "April";
+        return name_of_month;
+    }
+    if(month == 5)
+    {
+        name_of_month = "May";
+        return name_of_month;
+    }
+    if(month == 6)
+    {
+        name_of_month = "June";
+        return name_of_month;
+    }
+    if(month == 7)
+    {
+        name_of_month = "July";
+        return name_of_month;
+    }
+    if(month == 8)
+    {
+        name_of_month = "August";
+        return name_of_month;
+    }
+    if(month == 9)
+    {
+        name_of_month = "September";
+        return name_of_month;
+    }
+    if(month == 10)
+    {
+        name_of_month = "Oktober";
+        return name_of_month;
+    }
+    if(month == 11)
+    {
+        name_of_month = "November";
+        return name_of_month;
+    }
+    if(month == 12)
+    {
+        name_of_month = "December";
+        return name_of_month;
+    }
+    exit(0);
+}

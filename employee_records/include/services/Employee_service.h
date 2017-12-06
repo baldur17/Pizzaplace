@@ -1,12 +1,12 @@
 #ifndef EMPLOYEE_SERVICE_H
 #define EMPLOYEE_SERVICE_H
 #include <vector>
+#include "Employee.h"
 #include "Record_repository.h"
 #include "Invalid_ssn_exception.h"
 #include "Invalid_month_exception.h"
 #include "Invalid_salary_exception.h"
 #include "Invalid_year_exception.h"
-#include "Employee.h"
 #include <iostream>
 
 using namespace std;
@@ -15,7 +15,7 @@ class Employee_service
 {
     public:
         void add_record(Employee& employee);
-        void retrieve_record(string ssn);
+        vector<Employee> retrieve_record(string ssn);
         void validate_ssn(string ssn);
         void validate_name(string name);
         void validate_salary(double salary);

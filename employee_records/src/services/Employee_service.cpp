@@ -9,12 +9,12 @@ void Employee_service::add_record( Employee& employee)
 
     record_repo.add_record(employee);
 }
-void Employee_service::retrieve_record(string ssn)
+vector<Employee> Employee_service::retrieve_record(string ssn)
 {
-    validate_ssn(ssn);
-    ///record_repo.fill_vector();
+    vector<Employee> temp;
     ///recieve record i record_service;
-    record_repo.retrieve_record(ssn);
+    temp = record_repo.fill_vector();
+    return record_repo.vector_filtered_ssn(temp, ssn);
 }
 /*void Employee_service::retrieve_record_2(string ssn, int year)
 {
