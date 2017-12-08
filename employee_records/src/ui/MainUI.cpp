@@ -49,6 +49,11 @@ char MainUI::validate_user_input(char& input)
                 cout << "\tInvalid Salary!" << endl;
                 system("pause");
             }
+            catch (Invalid_name_exception){
+                cout << endl;
+                cout << "\tInvalid Name!" << endl;
+                system("pause");
+            }
         }
     if (input == '2')
         {
@@ -99,7 +104,6 @@ char MainUI::validate_user_input(char& input)
         }
     if (input == '4')
         {
-
         }
     if (input == '5')
         {
@@ -114,7 +118,7 @@ void MainUI::total_salary_display(vector<Employee> yearly_record)
     {
         total_salary += yearly_record[i].getSalary();
     }
-    cout << "\t" << yearly_record[0].getName() << "'s Yearly Salary Is: " << total_salary;
+    cout << "\t" << yearly_record[0].getName() << "'s Yearly Salary Is: " << total_salary << " ISK" << endl;
 }
 Employee MainUI::write_employee()
 {
@@ -146,10 +150,9 @@ void MainUI::recieve_ssn_record(vector<Employee> record)
         cout << endl;
         cout << "Employee's Name:  " << record[i].getName() << endl;
         cout << "Employee's SSN:   " << record[i].getSSN() << endl;
-        cout << "Employee's Salary " << record[i].getSalary() << endl;
+        cout << "Employee's Salary " << record[i].getSalary() << " ISK" << endl;
         cout << "Record For Month: " << month_name(record[i].getMonth()) << endl; ///syna manud ekki tolu hugsanlega
         cout << "Record For Year   " << record[i].getYear() << endl;
-        cout << endl;
     }
     system("pause");
 }

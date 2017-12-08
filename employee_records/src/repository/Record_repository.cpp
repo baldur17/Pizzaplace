@@ -23,8 +23,6 @@ void Record_repository::add_record(const Employee& employee)
 }
 vector<Employee> Record_repository::remove_duplicate(vector<Employee> file_content, Employee employee)
 {
-    cout << file_content.size();
-    system("pause");
     for (unsigned int i = 0; i < file_content.size(); i++)
     {
         if(employee.getSSN() == file_content[i].getSSN() && employee.getMonth() == file_content[i].getMonth() && employee.getYear() == file_content[i].getYear())
@@ -66,6 +64,19 @@ vector<Employee> Record_repository::vector_filtered_ssn(vector<Employee> vector_
         if(vector_of_records[i].getSSN() == ssn)
         {
             temp.push_back(vector_of_records[i]);
+        }
+    }
+    return temp;
+}
+vector<string> Record_repository::vector_filtered_ssn_numbers(vector<Employee> vector_of_records)
+{
+    vector<string> temp;
+    string temp_ssn;
+    for(unsigned int i = 0; i < vector_of_records.size(); i++)
+    {
+        if(vector_of_records[i].getSSN() != temp_ssn)
+        {
+            temp.push_back(vector_of_records[i].getSSN());
         }
     }
     return temp;

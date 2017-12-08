@@ -61,12 +61,13 @@
 1512522437 source:c:\users\notandi\desktop\háskólinn\employee_records\src\exceptions\invalid_ssn_exception.cpp
 	"Invalid_ssn_exception.h"
 
-1512575717 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\services\record_service.cpp
+1512737242 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\services\record_service.cpp
 	"Record_service.h"
 
-1512575738 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\services\record_service.h
+1512737242 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\services\record_service.h
+	"Record_repository.h"
+	"Employee.h"
 	<vector>
-	<Employee.h>
 	<stdlib.h>
 
 1512563017 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\models\employee.h
@@ -79,49 +80,48 @@
 	"MainUI.h"
 	<stdlib.h>
 
-1512576012 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\ui\mainui.h
+1512737242 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\ui\mainui.h
 	"Employee_service.h"
+	"Record_service.h"
 	<stdlib.h>
 	"Employee.h"
 	<string>
+	<iostream>
 
-1512575808 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\services\employee_service.h
+1512743949 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\services\employee_service.h
 	<vector>
+	"Employee.h"
 	"Record_repository.h"
 	"Invalid_ssn_exception.h"
 	"Invalid_month_exception.h"
 	"Invalid_salary_exception.h"
 	"Invalid_year_exception.h"
-	"Employee.h"
+	"Invalid_name_exception.h"
 	<iostream>
 
-1512575702 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\repository\record_repository.h
-	"Record_service.h"
-	<fstream>
+1512742806 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\repository\record_repository.h
 	"Employee.h"
+	<fstream>
 	<string>
 	<iostream>
 	<vector>
 	<stdlib.h>
 	<sstream>
+	<cstdlib>
 
 1512562174 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\exceptions\invalid_ssn_exception.h
 
 1512562174 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\exceptions\invalid_ssn_exception.cpp
 	"Invalid_ssn_exception.h"
 
-1512571346 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\models\employee.cpp
+1512737242 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\models\employee.cpp
 	"Employee.h"
 
-1512575256 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\repository\record_repository.cpp
+1512743949 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\repository\record_repository.cpp
 	"Record_repository.h"
 
-1512572604 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\ui\mainui.cpp
+1512744586 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\ui\mainui.cpp
 	"MainUI.h"
-	"Employee.h"
-	"Employee_service.h"
-	<iostream>
-	<string>
 
 1512563443 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\exceptions\invalid_month_exception.cpp
 	"Invalid_month_exception.h"
@@ -138,7 +138,7 @@
 1512564809 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\exceptions\invalid_salary_exception.cpp
 	"Invalid_salary_exception.h"
 
-1512573535 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\services\employee_service.cpp
+1512744288 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\services\employee_service.cpp
 	"Employee_service.h"
 
 1512665035 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\main.cpp
@@ -219,4 +219,9 @@
 
 1512665574 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\ui\mainui.cpp
 	"MainUI.h"
+
+1512738098 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\exceptions\invalid_name_exception.h
+
+1512738098 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\exceptions\invalid_name_exception.cpp
+	"Invalid_name_exception.h"
 

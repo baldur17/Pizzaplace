@@ -6,9 +6,18 @@ void Employee_service::add_record( Employee& employee)
     validate_month(employee.getMonth());
     validate_year(employee.getYear());
     validate_salary(employee.getSalary());
+    validate_name(employee.getName());
 
     record_repo.add_record(employee);
 }
+/*vector<Employee> Employee_service::retrieve_highest_salary()
+{
+    ///finna hæsta launaða fyrir x ár
+    ///return temp;
+}*/
+/*void Employee_service::highest_salary(vector<string> highest_salary, vector<Employee> temp)
+{
+}*/
 vector<Employee> Employee_service::retrieve_record(string ssn)
 {
     vector<Employee> temp;
@@ -64,5 +73,15 @@ void Employee_service::validate_salary(double salary)
     if (salary < 0 || salary > 10000000)
     {
         throw Invalid_salary_exception();
+    }
+}
+void Employee_service::validate_name(string name)
+{
+    for (unsigned int i = 0; i < name.length(); i++)
+    {
+        if (!isalpha(name[i]) && !isspace(name[i]))
+        {
+            throw Invalid_name_exception();
+        }
     }
 }

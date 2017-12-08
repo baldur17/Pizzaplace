@@ -20,6 +20,7 @@ class Record_repository
         vector<Employee> getVector();
         vector<Employee> vector_filtered_ssn(vector<Employee> vector_of_records, string ssn);
         vector<Employee> vector_filtered_ssn_year(vector<Employee> vector_of_records, string ssn, int year);
+        vector<string> vector_filtered_ssn_numbers(vector<Employee> vector_of_records);
         Employee parse_string(string property);
         vector<Employee> remove_duplicate(vector<Employee> file_content, Employee employee);
     private:

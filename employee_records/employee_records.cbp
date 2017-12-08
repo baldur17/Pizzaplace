@@ -43,6 +43,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/exceptions/Invalid_month_exception.h" />
+		<Unit filename="include/exceptions/Invalid_name_exception.h" />
 		<Unit filename="include/exceptions/Invalid_salary_exception.h" />
 		<Unit filename="include/exceptions/Invalid_ssn_exception.h" />
 		<Unit filename="include/exceptions/Invalid_year_exception.h" />
@@ -54,6 +55,7 @@
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/exceptions/Invalid_month_exception.cpp" />
+		<Unit filename="src/exceptions/Invalid_name_exception.cpp" />
 		<Unit filename="src/exceptions/Invalid_salary_exception.cpp" />
 		<Unit filename="src/exceptions/Invalid_ssn_exception.cpp" />
 		<Unit filename="src/exceptions/Invalid_year_exception.cpp" />
