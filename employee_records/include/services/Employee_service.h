@@ -16,6 +16,7 @@ class Employee_service
     public:
         void add_record(Employee& employee);
         vector<Employee> retrieve_record(string ssn);
+        vector<Employee> retrieve_record_for_year(string ssn, int year);
         void validate_ssn(string ssn);
         void validate_name(string name);
         void validate_salary(double salary);

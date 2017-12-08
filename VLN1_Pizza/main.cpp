@@ -6,7 +6,5 @@ using namespace std;
 
 int main()
 {
-    mainUI mainui;
-    mainui.startUI();
     return 0;
 }

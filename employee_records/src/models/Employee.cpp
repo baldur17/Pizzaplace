@@ -18,7 +18,7 @@ Employee::Employee(string name, string ssn, double salary, int month, int year)
 }
 ostream& operator << (ostream& out, const Employee& employee)
 {
-    out << employee.name << " " << employee.ssn << " " << employee.salary << " " << employee.month << " " << employee.year << endl;
+    out << employee.name << "," << employee.ssn << "," << employee.salary << "," << employee.month << "," << employee.year << "," << endl;
     return out;
 }
 istream& operator >> (istream& in, Employee& employee)

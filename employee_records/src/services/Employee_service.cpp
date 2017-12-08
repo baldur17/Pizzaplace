@@ -16,6 +16,12 @@ vector<Employee> Employee_service::retrieve_record(string ssn)
     temp = record_repo.fill_vector();
     return record_repo.vector_filtered_ssn(temp, ssn);
 }
+vector<Employee> Employee_service::retrieve_record_for_year(string ssn, int year)
+{
+    vector<Employee> temp;
+    temp = record_repo.fill_vector();
+    return record_repo.vector_filtered_ssn_year(temp, ssn, year);
+}
 /*void Employee_service::retrieve_record_2(string ssn, int year)
 {
     validate_ssn(ssn);
@@ -55,7 +61,7 @@ void Employee_service::validate_year(int year)
 }
 void Employee_service::validate_salary(double salary)
 {
-    if (salary < 0)
+    if (salary < 0 || salary > 10000000)
     {
         throw Invalid_salary_exception();
     }

@@ -34,17 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/bakerUI.h" />
-		<Unit filename="include/deliveryUI.h" />
-		<Unit filename="include/mainUI.h" />
-		<Unit filename="include/managementUI.h" />
-		<Unit filename="include/salesUI.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/bakerUI.cpp" />
-		<Unit filename="src/deliveryUI.cpp" />
-		<Unit filename="src/mainUI.cpp" />
-		<Unit filename="src/managementUI.cpp" />
-		<Unit filename="src/salesUI.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

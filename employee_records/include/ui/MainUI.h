@@ -16,6 +16,7 @@ class MainUI
         char validate_user_input(char &input);
         Employee write_employee();
         void recieve_ssn_record(vector<Employee> record);
+        void total_salary_display(vector<Employee> yearly_record);
         string month_name(int month);
     private:
         Employee_service emp_service;

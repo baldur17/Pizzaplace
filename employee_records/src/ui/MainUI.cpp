@@ -75,8 +75,27 @@ char MainUI::validate_user_input(char& input)
             cout << endl;
             cout << "\tEnter Employee's SSN(10 digits): ";
             cin >> ssn;
-            cout << "Enter The Year You Wish To Get Records From: ";
+            cout << "\tEnter The Year You Wish To Get Records From: ";
             cin >> year;
+            vector<Employee> yearly_record;
+            try{
+            emp_service.validate_ssn(ssn);
+            emp_service.validate_year(year);
+            yearly_record = emp_service.retrieve_record_for_year(ssn, year);
+            total_salary_display(yearly_record);
+            cout << endl;
+            system("pause");
+
+            }
+            catch (Invalid_ssn_exception){
+                cout << "Invalid SSN number!" << endl;
+                system("pause");
+            }
+            catch (Invalid_year_exception){
+                cout << "Invalid Year!" << endl;
+                system("pause");
+            }
+
         }
     if (input == '4')
         {
@@ -87,6 +106,15 @@ char MainUI::validate_user_input(char& input)
             exit(0);
         }
     return 0;
+}
+void MainUI::total_salary_display(vector<Employee> yearly_record)
+{
+    double total_salary;
+    for (unsigned int i = 0; i < yearly_record.size(); i++)
+    {
+        total_salary += yearly_record[i].getSalary();
+    }
+    cout << "\t" << yearly_record[0].getName() << "'s Yearly Salary Is: " << total_salary;
 }
 Employee MainUI::write_employee()
 {
@@ -135,7 +163,7 @@ string MainUI::month_name(int month)
     }
     if(month == 2)
     {
-        name_of_month = "Febuary";
+        name_of_month = "February";
         return name_of_month;
     }
     if(month == 3)
@@ -175,7 +203,7 @@ string MainUI::month_name(int month)
     }
     if(month == 10)
     {
-        name_of_month = "Oktober";
+        name_of_month = "October";
         return name_of_month;
     }
     if(month == 11)
