@@ -159,7 +159,7 @@
 	<string>
 	<iostream>
 
-1512665042 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\services\employee_service.h
+1512751878 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\services\employee_service.h
 	<vector>
 	"Employee.h"
 	"Record_repository.h"
@@ -167,6 +167,7 @@
 	"Invalid_month_exception.h"
 	"Invalid_salary_exception.h"
 	"Invalid_year_exception.h"
+	"Invalid_name_exception.h"
 	<iostream>
 
 1512522437 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\exceptions\invalid_ssn_exception.h
@@ -180,13 +181,13 @@
 1512522437 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\exceptions\invalid_ssn_exception.cpp
 	"Invalid_ssn_exception.h"
 
-1512577705 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\services\record_service.h
+1512732897 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\services\record_service.h
 	"Record_repository.h"
 	"Employee.h"
 	<vector>
 	<stdlib.h>
 
-1512665133 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\repository\record_repository.h
+1512751878 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\repository\record_repository.h
 	"Employee.h"
 	<fstream>
 	<string>
@@ -211,17 +212,22 @@
 1512653035 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\models\employee.cpp
 	"Employee.h"
 
-1512668690 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\repository\record_repository.cpp
+1512753220 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\repository\record_repository.cpp
 	"Record_repository.h"
 
-1512666108 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\services\employee_service.cpp
+1512751878 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\services\employee_service.cpp
 	"Employee_service.h"
 
-1512665574 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\ui\mainui.cpp
+1512751878 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\ui\mainui.cpp
 	"MainUI.h"
 
 1512738098 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\include\exceptions\invalid_name_exception.h
 
 1512738098 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\employee_records\src\exceptions\invalid_name_exception.cpp
+	"Invalid_name_exception.h"
+
+1512751878 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\include\exceptions\invalid_name_exception.h
+
+1512751878 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\employee_records\src\exceptions\invalid_name_exception.cpp
 	"Invalid_name_exception.h"
 
