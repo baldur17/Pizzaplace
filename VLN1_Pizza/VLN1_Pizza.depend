@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1512318420 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\main.cpp
+1512925974 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\main.cpp
 	<iostream>
-	"mainUI.h"
-	"managementUI.h"
 	<stdlib.h>
+	<MainUI.h>
+	<Pizza.h>
+	<Topping.h>
+	<vector>
 
 1512346995 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\mainui.h
 	"managementUI.h"
@@ -43,4 +45,46 @@
 1512346904 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\deliveryui.h
 	"stdlib.h"
 	<iostream>
+
+1512925868 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\ui\mainui.h
+	<ManagementUI.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+
+1512926081 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\ui\mainui.cpp
+	"MainUI.h"
+
+1512924639 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\topping.cpp
+	"Topping.h"
+
+1512924457 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\models\topping.h
+	<iostream>
+	<vector>
+	<string>
+
+1512925523 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\pizza.cpp
+	"Pizza.h"
+
+1512924767 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\models\pizza.h
+	"Topping.h"
+	<iostream>
+	<vector>
+	<string>
+
+1512926871 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\ui\managementui.h
+	<Topping.h>
+	<Topping_service.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+
+1512927134 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\ui\managementui.cpp
+	"ManagementUI.h"
+
+1512927274 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\services\topping_service.h
+	<Topping.h>
+
+1512926679 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\services\topping_service.cpp
+	"Topping_service.h"
 
