@@ -17,6 +17,8 @@
 					<Add directory="include/ui" />
 					<Add directory="include/models" />
 					<Add directory="include/services" />
+					<Add directory="include/repository" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +32,8 @@
 					<Add directory="include/ui" />
 					<Add directory="include/models" />
 					<Add directory="include/services" />
+					<Add directory="include/repository" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -40,14 +44,26 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/exceptions/Invalid_name_exception.h" />
+		<Unit filename="include/exceptions/Invalid_pizza_size_exception.h" />
+		<Unit filename="include/exceptions/Invalid_price_exception.h" />
 		<Unit filename="include/models/Pizza.h" />
 		<Unit filename="include/models/Topping.h" />
+		<Unit filename="include/repository/Pizza_repository.h" />
+		<Unit filename="include/repository/Topping_Repository.h" />
+		<Unit filename="include/services/Pizza_service.h" />
 		<Unit filename="include/services/Topping_service.h" />
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="include/ui/ManagementUI.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/exceptions/Invalid_name_exception.cpp" />
+		<Unit filename="src/exceptions/Invalid_pizza_size_exception.cpp" />
+		<Unit filename="src/exceptions/Invalid_price_exception.cpp" />
 		<Unit filename="src/models/Pizza.cpp" />
 		<Unit filename="src/models/Topping.cpp" />
+		<Unit filename="src/repository/Pizza_repository.cpp" />
+		<Unit filename="src/repository/Topping_Repository.cpp" />
+		<Unit filename="src/services/Pizza_service.cpp" />
 		<Unit filename="src/services/Topping_service.cpp" />
 		<Unit filename="src/ui/MainUI.cpp" />
 		<Unit filename="src/ui/ManagementUI.cpp" />

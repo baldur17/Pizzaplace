@@ -5,13 +5,17 @@
 #include <vector>
 #include <string>
 
+#include <cstdlib>
+
 using namespace std;
 
 class Pizza
 {
     public:
         Pizza();
-        Pizza(vector<Topping> topping, char pizza_size);
+        Pizza(vector<Topping> topping, char pizza_size, int price);
+        Pizza(char pizza_size, int price);
+
         char getPizza_size();
         vector<Topping> getTopping();
         void setPizza_size(char pizza_size);
@@ -22,6 +26,7 @@ class Pizza
         vector<Topping> topping;
         ///vector af klasanum Topping;
         char pizza_size;
+        int size_price;
         ///Pizza size char breyta, 's' = small, 'm' = medium, 'l' = large;
         ///bæta við seinna kannski týpu, thin crust etc byrja á þessu (einfaldara)
 };

@@ -88,3 +88,107 @@
 1512926679 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\services\topping_service.cpp
 	"Topping_service.h"
 
+1512985047 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\main.cpp
+	<iostream>
+	<stdlib.h>
+	<MainUI.h>
+	<Pizza.h>
+	<Topping.h>
+	<vector>
+
+1512993040 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\mainui.h
+	"ManagementUI.h"
+	<stdlib.h>
+	<iostream>
+	<string>
+
+1512998054 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\managementui.h
+	"Topping.h"
+	"Topping_service.h"
+	"Invalid_price_exception.h"
+	"Pizza.h"
+	"Pizza_service.h"
+	<stdlib.h>
+	<iostream>
+	<string>
+
+1512985047 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\models\topping.h
+	<iostream>
+	<vector>
+	<string>
+
+1512994019 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\services\topping_service.h
+	"Invalid_price_exception.h"
+	"Invalid_name_exception.h"
+	<cstdlib>
+	"Topping.h"
+	"Topping_Repository.h"
+
+1513004800 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\topping_repository.h
+	"Topping.h"
+	<vector>
+	<iostream>
+	<string>
+	<fstream>
+	<cstdlib>
+
+1513001403 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\models\pizza.h
+	"Topping.h"
+	<iostream>
+	<vector>
+	<string>
+	<cstdlib>
+
+1512985047 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\models\topping.cpp
+	"Topping.h"
+
+1512998497 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\topping_service.cpp
+	"Topping_service.h"
+
+1512985047 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\mainui.cpp
+	"MainUI.h"
+
+1513000658 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\managementui.cpp
+	"ManagementUI.h"
+
+1513005778 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\topping_repository.cpp
+	"Topping_Repository.h"
+
+1513001863 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\models\pizza.cpp
+	"Pizza.h"
+
+1512992607 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\exceptions\invalid_price_exception.cpp
+	"Invalid_price_exception.h"
+
+1512992607 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\exceptions\invalid_price_exception.h
+
+1512993942 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\exceptions\invalid_name_exception.h
+
+1512993942 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\exceptions\invalid_name_exception.cpp
+	"Invalid_name_exception.h"
+
+1513000639 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\services\pizza_service.h
+	"Pizza.h"
+	"Pizza_repository.h"
+	"Invalid_pizza_size_exception.h"
+	<cstdlib>
+
+1513001863 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\pizza_service.cpp
+	"Pizza_service.h"
+
+1513000066 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\pizza_repository.cpp
+	"Pizza_repository.h"
+
+1512999547 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\pizza_repository.h
+	"Pizza.h"
+	<vector>
+	<iostream>
+	<string>
+	<fstream>
+	<cstdlib>
+
+1513001472 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\exceptions\invalid_pizza_size_exception.cpp
+	"Invalid_pizza_size_exception.h"
+
+1513001472 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\exceptions\invalid_pizza_size_exception.h
+

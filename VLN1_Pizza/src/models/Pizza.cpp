@@ -4,10 +4,16 @@ Pizza::Pizza()
 {
     pizza_size = '\0';
 }
-Pizza::Pizza(vector<Topping> topping, char pizza_size)
+Pizza::Pizza(vector<Topping> topping, char pizza_size,int price)
 {
     this->topping = topping;
     this->pizza_size = pizza_size;
+    this->size_price = price;
+}
+Pizza::Pizza(char pizza_size,int price)
+{
+    this->pizza_size = pizza_size;
+    this->size_price = price;
 }
 char Pizza::getPizza_size()
 {
@@ -27,10 +33,14 @@ void Pizza::setTopping(vector<Topping> topping)
 }
 ostream& operator << (ostream& out, const Pizza& p)
 {
-    out << p.pizza_size << ",";
+    out << p.pizza_size << "," << p.size_price << ",";
     for (unsigned int i = 0; i < p.topping.size(); i++)
     {
         cout << p.topping[i].getName() << "," << p.topping[i].getPrice() << "," << endl;
+    }
+    if (p.topping.size() == 0)
+    {
+        out << endl;
     }
     return out;
 }
