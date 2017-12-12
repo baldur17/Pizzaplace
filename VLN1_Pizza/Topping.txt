@@ -1,2 +1,3 @@
-Pepperoni,400,
-Sveppir,250,
+Pepperoni,250,
+Sveppir,350,
+Skinka,200,

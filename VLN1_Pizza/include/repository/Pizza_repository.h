@@ -14,6 +14,7 @@ class Pizza_repository
         void add_to_file(Pizza p);
         vector<Pizza> fill_basepizza_vector();
         Pizza parse_string(string line);
+        vector<Pizza> remove_duplicate(Pizza p, vector<Pizza> p_vector);
     private:
         vector<Pizza> vector_of_basepizza;
 };

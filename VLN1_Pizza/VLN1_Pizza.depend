@@ -102,12 +102,16 @@
 	<iostream>
 	<string>
 
-1512998054 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\managementui.h
+1513076872 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\managementui.h
 	"Topping.h"
 	"Topping_service.h"
 	"Invalid_price_exception.h"
 	"Pizza.h"
 	"Pizza_service.h"
+	"Drinks.h"
+	"DrinksService.h"
+	"Locations.h"
+	"LocationsService.h"
 	<stdlib.h>
 	<iostream>
 	<string>
@@ -142,16 +146,16 @@
 1512985047 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\models\topping.cpp
 	"Topping.h"
 
-1512998497 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\topping_service.cpp
+1513078430 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\topping_service.cpp
 	"Topping_service.h"
 
 1512985047 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\mainui.cpp
 	"MainUI.h"
 
-1513000658 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\managementui.cpp
+1513076985 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\managementui.cpp
 	"ManagementUI.h"
 
-1513005778 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\topping_repository.cpp
+1513073694 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\topping_repository.cpp
 	"Topping_Repository.h"
 
 1513001863 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\models\pizza.cpp
@@ -176,10 +180,10 @@
 1513001863 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\pizza_service.cpp
 	"Pizza_service.h"
 
-1513000066 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\pizza_repository.cpp
+1513073228 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\pizza_repository.cpp
 	"Pizza_repository.h"
 
-1512999547 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\pizza_repository.h
+1513073067 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\pizza_repository.h
 	"Pizza.h"
 	<vector>
 	<iostream>
@@ -191,4 +195,51 @@
 	"Invalid_pizza_size_exception.h"
 
 1513001472 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\exceptions\invalid_pizza_size_exception.h
+
+1513076350 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\models\drinks.h
+	<string>
+	<iostream>
+
+1513076872 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\models\locations.h
+	<string>
+	<iostream>
+
+1513076350 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\models\drinks.cpp
+	"Drinks.h"
+
+1513076872 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\models\locations.cpp
+	"Locations.h"
+
+1513075209 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\drinksrepository.cpp
+	"DrinksRepository.h"
+	<fstream>
+
+1513075136 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\drinksrepository.h
+	"Drinks.h"
+	<fstream>
+
+1513075203 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\locationsrepository.cpp
+	"LocationsRepository.h"
+	<fstream>
+
+1513075144 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\locationsrepository.h
+	"Locations.h"
+	<fstream>
+
+1513075398 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\services\drinksservice.h
+	"Drinks.h"
+	"DrinksRepository.h"
+	"Invalid_price_exception.h"
+
+1513075018 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\services\locationsservice.h
+	"Locations.h"
+	"LocationsRepository.h"
+
+1513076985 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\drinksservice.cpp
+	"DrinksService.h"
+	<ctype.h>
+
+1513076985 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\locationsservice.cpp
+	"LocationsService.h"
+	<ctype.h>
 

@@ -10,7 +10,7 @@ void ManagementUI::startUI()
         cout << "\tMANAGEMENT MENU" << endl << endl;
         cout << "\t01. ADD TOPPING TO SYSTEM" << endl << endl;
         cout << "\t02. ADD BASE PIZZA TO SYSTEM" << endl << endl;
-        cout << "\t03. PLACEHOLDER" << endl << endl;
+        cout << "\t03. ADD DRINKS TO SYSTEM" << endl << endl;
         cout << "\t04. PLACEHOLDER" << endl << endl;
         cout << "\t05. EXIT" << endl << endl;
         cout << "\tSelect Your Option <1-5> ";
@@ -50,10 +50,14 @@ char ManagementUI::validate_user_input(char input)
             }
         }
     if (input == '3'){
-
+            Drinks d;
+            d = create_drinks();
+            d_service.addDrink(d);
         }
     if (input == '4'){
-
+            Locations l;
+            l = create_location();
+            l_service.addLocation(l);
         }
     if (input == '5'){
             exit(0);
@@ -85,4 +89,35 @@ Pizza ManagementUI::create_pizza()
     cin >> size_price;
     Pizza p(size, size_price);
     return p;
+}
+Drinks ManagementUI::create_drinks()
+{
+    string brand;
+    string size;
+    int price;
+    cout << "\tEnter Brand Name: ";
+    cin.ignore();
+    getline(cin, brand);
+    cout << "\tEnter Size: ";
+    cin >> size;
+    cout << "\tEnter Price: ";
+    cin >> price;
+
+    Drinks drink(brand, size, price);
+    return drink;
+}
+Locations ManagementUI::create_location()
+{
+    string city;
+    string street;
+
+    cout << "\tEnter City Name: ";
+    cin.ignore();
+    getline(cin, city);
+    cout << "\tEnter Street Name: ";
+    getline(cin, street);
+    Locations location(city, street);
+    return location;
+
+
 }

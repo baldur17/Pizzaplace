@@ -33,10 +33,8 @@ vector<Topping> Topping_Repository::fill_topping_vector()
     fin.open("Topping.txt");
     if (fin.is_open())
     {
-
         vector_of_topping.clear();
-        while(getline(fin, line))
-        {
+        while(getline(fin, line)){
             vector_of_topping.push_back(parse_string(line));
         }
         fin.close();

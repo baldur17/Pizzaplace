@@ -3,13 +3,28 @@
 void Pizza_repository::add_to_file(Pizza p)
 {
     ofstream fout;
-
-    fout.open("base_pizza.txt", ios::app);
+    vector<Pizza> temp;
+    temp = fill_basepizza_vector();
+    temp = remove_duplicate(p, temp);
+    fout.open("base_pizza.txt", ios::trunc);
     if(fout.is_open())
     {
-        fout << p;
+        for(unsigned int i = 0; i < temp.size(); i++){
+            fout << temp[i];
+            }
     }
     fout.close();
+}
+vector<Pizza> Pizza_repository::remove_duplicate(Pizza p, vector<Pizza> p_vector)
+{
+    for (unsigned int i = 0; i < p_vector.size(); i++){
+        if(p.getPizza_size() == p_vector[i].getPizza_size()){
+            p_vector[i] = p;
+            return p_vector;
+        }
+    }
+    p_vector.push_back(p);
+    return p_vector;
 }
 vector<Pizza> Pizza_repository::fill_basepizza_vector()
 {
