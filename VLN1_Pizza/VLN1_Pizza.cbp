@@ -47,26 +47,42 @@
 		<Unit filename="include/exceptions/Invalid_name_exception.h" />
 		<Unit filename="include/exceptions/Invalid_pizza_size_exception.h" />
 		<Unit filename="include/exceptions/Invalid_price_exception.h" />
+		<Unit filename="include/models/Drinks.h" />
+		<Unit filename="include/models/Locations.h" />
+		<Unit filename="include/models/Order.h" />
 		<Unit filename="include/models/Pizza.h" />
 		<Unit filename="include/models/Topping.h" />
+		<Unit filename="include/repository/DrinksRepository.h" />
+		<Unit filename="include/repository/LocationsRepository.h" />
 		<Unit filename="include/repository/Pizza_repository.h" />
 		<Unit filename="include/repository/Topping_Repository.h" />
+		<Unit filename="include/services/DrinksService.h" />
+		<Unit filename="include/services/LocationsService.h" />
 		<Unit filename="include/services/Pizza_service.h" />
 		<Unit filename="include/services/Topping_service.h" />
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="include/ui/ManagementUI.h" />
+		<Unit filename="include/ui/SalesUI.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/exceptions/Invalid_name_exception.cpp" />
 		<Unit filename="src/exceptions/Invalid_pizza_size_exception.cpp" />
 		<Unit filename="src/exceptions/Invalid_price_exception.cpp" />
+		<Unit filename="src/models/Drinks.cpp" />
+		<Unit filename="src/models/Locations.cpp" />
+		<Unit filename="src/models/Order.cpp" />
 		<Unit filename="src/models/Pizza.cpp" />
 		<Unit filename="src/models/Topping.cpp" />
+		<Unit filename="src/repository/DrinksRepository.cpp" />
+		<Unit filename="src/repository/LocationsRepository.cpp" />
 		<Unit filename="src/repository/Pizza_repository.cpp" />
 		<Unit filename="src/repository/Topping_Repository.cpp" />
+		<Unit filename="src/services/DrinksService.cpp" />
+		<Unit filename="src/services/LocationsService.cpp" />
 		<Unit filename="src/services/Pizza_service.cpp" />
 		<Unit filename="src/services/Topping_service.cpp" />
 		<Unit filename="src/ui/MainUI.cpp" />
 		<Unit filename="src/ui/ManagementUI.cpp" />
+		<Unit filename="src/ui/SalesUI.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

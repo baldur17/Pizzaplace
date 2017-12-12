@@ -23,6 +23,10 @@ vector<Topping> Pizza::getTopping()
 {
     return topping;
 }
+int Pizza::getPrice()
+{
+    return size_price;
+}
 void Pizza::setPizza_size(char pizza_size)
 {
     this->pizza_size = pizza_size;
