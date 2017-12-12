@@ -10,6 +10,9 @@
 #include "Locations.h"
 #include "LocationsService.h"
 
+///
+#include "MainUI.h"
+
 #include <stdlib.h>
 #include <iostream>
 #include <string>

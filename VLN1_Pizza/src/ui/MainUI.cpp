@@ -27,6 +27,8 @@ char MainUI::validate_user_input(char input)
             managementui.startUI();
         }
     if (input == '2'){
+            SalesUI salesui;
+            salesui.startUI();
 
         }
     if (input == '3'){

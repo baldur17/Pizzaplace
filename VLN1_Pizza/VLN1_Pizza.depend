@@ -96,13 +96,14 @@
 	<Topping.h>
 	<vector>
 
-1512993040 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\mainui.h
+1513079539 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\mainui.h
 	"ManagementUI.h"
+	"SalesUI.h"
 	<stdlib.h>
 	<iostream>
 	<string>
 
-1513076872 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\managementui.h
+1513080971 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\managementui.h
 	"Topping.h"
 	"Topping_service.h"
 	"Invalid_price_exception.h"
@@ -112,6 +113,7 @@
 	"DrinksService.h"
 	"Locations.h"
 	"LocationsService.h"
+	"MainUI.h"
 	<stdlib.h>
 	<iostream>
 	<string>
@@ -149,10 +151,10 @@
 1513078430 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\topping_service.cpp
 	"Topping_service.h"
 
-1512985047 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\mainui.cpp
+1513079858 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\mainui.cpp
 	"MainUI.h"
 
-1513076985 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\managementui.cpp
+1513081261 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\managementui.cpp
 	"ManagementUI.h"
 
 1513073694 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\topping_repository.cpp
@@ -214,17 +216,21 @@
 	"DrinksRepository.h"
 	<fstream>
 
-1513075136 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\drinksrepository.h
+1513084272 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\drinksrepository.h
 	"Drinks.h"
 	<fstream>
+	<vector>
+	<cstdlib>
 
-1513075203 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\locationsrepository.cpp
+1513083501 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\repository\locationsrepository.cpp
 	"LocationsRepository.h"
 	<fstream>
 
-1513075144 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\locationsrepository.h
+1513083393 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\locationsrepository.h
 	"Locations.h"
 	<fstream>
+	<vector>
+	<cstdlib>
 
 1513075398 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\services\drinksservice.h
 	"Drinks.h"
@@ -239,7 +245,15 @@
 	"DrinksService.h"
 	<ctype.h>
 
-1513076985 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\locationsservice.cpp
+1513083520 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\services\locationsservice.cpp
 	"LocationsService.h"
 	<ctype.h>
+
+1513079849 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\ui\salesui.h
+	<stdlib.h>
+	<iostream>
+	<string>
+
+1513079881 source:c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\src\ui\salesui.cpp
+	"SalesUI.h"
 

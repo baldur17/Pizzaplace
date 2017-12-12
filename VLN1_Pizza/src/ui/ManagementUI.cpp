@@ -3,7 +3,7 @@
 void ManagementUI::startUI()
 {
     char input = '0';
-    while(input != '5')
+    while(input != '6')
     {
         system("cls");
         cout << endl;
@@ -11,9 +11,10 @@ void ManagementUI::startUI()
         cout << "\t01. ADD TOPPING TO SYSTEM" << endl << endl;
         cout << "\t02. ADD BASE PIZZA TO SYSTEM" << endl << endl;
         cout << "\t03. ADD DRINKS TO SYSTEM" << endl << endl;
-        cout << "\t04. PLACEHOLDER" << endl << endl;
-        cout << "\t05. EXIT" << endl << endl;
-        cout << "\tSelect Your Option <1-5> ";
+        cout << "\t04. ADD FRANCHISE LOCATION TO SYSTEM" << endl << endl;
+        cout << "\t05. BACK" << endl << endl;
+        cout << "\t06. EXIT" << endl << endl;
+        cout << "\tSelect Your Option <1-6> ";
         cin >> input;
         system("cls");
         validate_user_input(input);
@@ -51,8 +52,15 @@ char ManagementUI::validate_user_input(char input)
         }
     if (input == '3'){
             Drinks d;
+            try{
             d = create_drinks();
             d_service.addDrink(d);
+            }
+            catch(Invalid_price_exception){
+                cout << endl;
+                cout << "\tInvalid Price!" << endl << endl;
+                system("pause");
+            }
         }
     if (input == '4'){
             Locations l;
@@ -60,6 +68,10 @@ char ManagementUI::validate_user_input(char input)
             l_service.addLocation(l);
         }
     if (input == '5'){
+            MainUI mainui;
+            mainui.startUI();
+        }
+    if (input == '6'){
             exit(0);
         }
     else{
@@ -99,7 +111,8 @@ Drinks ManagementUI::create_drinks()
     cin.ignore();
     getline(cin, brand);
     cout << "\tEnter Size: ";
-    cin >> size;
+    cin.ignore();
+    getline(cin, size);
     cout << "\tEnter Price: ";
     cin >> price;
 

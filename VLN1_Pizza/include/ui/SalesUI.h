@@ -1,8 +1,5 @@
-#ifndef MAINUI_H
-#define MAINUI_H
-
-#include "ManagementUI.h"
-#include "SalesUI.h"
+#ifndef SALESUI_H
+#define SALESUI_H
 
 #include <stdlib.h>
 #include <iostream>
@@ -10,7 +7,7 @@
 
 using namespace std;
 
-class MainUI
+class SalesUI
 {
     public:
         void startUI();
@@ -18,4 +15,4 @@ class MainUI
     private:
 };
 
-#endif // MAINUI_H
+#endif // SALESUI_H
