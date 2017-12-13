@@ -36,17 +36,20 @@ void write_order_to_screen(Order o)
     vector<Topping> temp_topping;
     temp_topping = o.getPizza().getTopping();
     string topping = temp_topping[0].getName();
-    cout << "Order include:" << endl;
+    cout << endl << endl;
+    cout << "Order includes" << endl;
     cout << "Topping: " << topping << endl;
     cout << "Drinks: " << o.getDrinks().getBrand() << " " << o.getDrinks().getSize() << endl;
     cout << "Location: " << o.getLocation().getCity() << " " << o.getLocation().getStreet() << endl;
     temp = status(o.getFlag());
     cout << "Pizza Status: " << temp << endl;
+    cout << "Order Total Price: " << o.getPizza().getPrice() + temp_topping[0].getPrice() + o.getDrinks().getPrice() << endl;
 
 }*/
 int main()
 {
-    /*Topping t("pepperoni", 200);
+    /*
+    Topping t("pepperoni", 200);
     vector<Topping> temp;
     temp.push_back(t);
     Pizza p(temp, 's', 1200);
@@ -56,9 +59,10 @@ int main()
     cout << o << endl;
     vector<Topping> temp_topping;
     temp_topping = o.getPizza().getTopping();
-    cout << o.getPizza().getPrice() + temp_topping[0].getPrice() + o.getDrinks().getPrice() << endl;
+
     write_order_to_screen(o);
-    system("pause");*/
+    system("pause");
+    */
     MainUI mainui;
     mainui.startUI();
 

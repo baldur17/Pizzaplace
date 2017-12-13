@@ -24,6 +24,6 @@ int Drinks::getPrice() const {
 }
 
 ostream& operator << (ostream& out, const Drinks& drink) {
-    out << drink.brand << "," << drink.size << "," << drink.price << "," << endl;
+    out << drink.brand << "," << drink.size << "," << drink.price << ",";
     return out;
 }

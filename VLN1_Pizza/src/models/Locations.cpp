@@ -18,6 +18,6 @@ string Locations::getStreet() const {
 }
 
 ostream& operator << (ostream& out, const Locations& location) {
-    out << location.city << "," << location.street << "," << endl;
+    out << location.city << "," << location.street << ",";
     return out;
 }
