@@ -45,6 +45,6 @@ void Order::setFlag(char flag)
 }
 ostream& operator << (ostream& out, const Order& o)
 {
-    out << o.pizza << o.drink << o.location << o.flag << ",";
+    out << o.pizza << o.drink << o.location << o.flag << "," << endl;
     return out;
 }

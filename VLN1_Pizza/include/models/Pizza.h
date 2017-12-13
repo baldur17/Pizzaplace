@@ -17,6 +17,7 @@ class Pizza
         Pizza(char pizza_size, int price);
 
         char getPizza_size();
+        void setSize_price(int size_price);
         int getPrice();
         vector<Topping> getTopping();
         void setPizza_size(char pizza_size);

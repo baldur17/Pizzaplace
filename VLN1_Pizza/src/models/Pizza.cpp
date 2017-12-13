@@ -35,6 +35,10 @@ void Pizza::setTopping(vector<Topping> topping)
 {
     this->topping = topping;
 }
+void Pizza::setSize_price(int size_price)
+{
+    this->size_price = size_price;
+}
 ostream& operator << (ostream& out, const Pizza& p)
 {
     out << p.pizza_size << "," << p.size_price << ",";
@@ -42,16 +46,14 @@ ostream& operator << (ostream& out, const Pizza& p)
     {
         cout << p.topping[i].getName() << "," << p.topping[i].getPrice() << "," << endl;
     }
-    if (p.topping.size() == 0)
+    /*if (p.topping.size() == 0)
     {
         out << endl;
-    }
+    }*/
     return out;
 }
 istream& operator >> (istream& in, Pizza& p)
 {
-    ///overload fyrir istream pizza, hugsanlega breyta þessu yfir í sér fall
-    ///í eitthverjum ui klasa svo það sé auðveldara að skrifa í skrá;
     int topcnt = 0;
     cin >> topcnt;
     in >> p.pizza_size;

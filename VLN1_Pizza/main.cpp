@@ -9,9 +9,10 @@
 #include <Topping.h>
 #include <vector>
 #include <Order.h>
+#include <Order_repository.h>
 
 using namespace std;
-/*
+
 string status(char flag)
 {
     string flag_status;
@@ -45,24 +46,20 @@ void write_order_to_screen(Order o)
     cout << "Pizza Status: " << temp << endl;
     cout << "Order Total Price: " << o.getPizza().getPrice() + temp_topping[0].getPrice() + o.getDrinks().getPrice() << endl;
 
-}*/
+}
 int main()
 {
-    /*
-    Topping t("pepperoni", 200);
-    vector<Topping> temp;
-    temp.push_back(t);
-    Pizza p(temp, 's', 1200);
-    Drinks d("coke", "2L", 200);
-    Locations l("Akureyri", "undirhlid");
-    Order o(p, d, l, 'r');
-    cout << o << endl;
-    vector<Topping> temp_topping;
-    temp_topping = o.getPizza().getTopping();
-
-    write_order_to_screen(o);
+    Order_repository o_repo;
+    vector<vector<Topping> > t;
+    t = o_repo.fill_topping_order_vector();
+    for (unsigned int i = 0; i < t.size(); i++)
+    {
+       for(unsigned int j = 0; j < t[i].size(); j++)
+        cout << t[i][j];
+        system("pause");
+    }
     system("pause");
-    */
+
     MainUI mainui;
     mainui.startUI();
 

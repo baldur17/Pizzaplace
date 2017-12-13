@@ -10,7 +10,7 @@ void Pizza_repository::add_to_file(Pizza p)
     if(fout.is_open())
     {
         for(unsigned int i = 0; i < temp.size(); i++){
-            fout << temp[i];
+            fout << temp[i] << endl;
             }
     }
     fout.close();

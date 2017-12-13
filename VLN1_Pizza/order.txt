@@ -1,0 +1,2 @@
+s,1200,coke,2L,200,Akureyri,undirhlid,r,
+s,1200,coke,2L,200,Akureyri,undirhlid,n,

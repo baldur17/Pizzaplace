@@ -54,6 +54,7 @@
 		<Unit filename="include/models/Topping.h" />
 		<Unit filename="include/repository/DrinksRepository.h" />
 		<Unit filename="include/repository/LocationsRepository.h" />
+		<Unit filename="include/repository/Order_repository.h" />
 		<Unit filename="include/repository/Pizza_repository.h" />
 		<Unit filename="include/repository/Topping_Repository.h" />
 		<Unit filename="include/services/DrinksService.h" />
@@ -74,6 +75,7 @@
 		<Unit filename="src/models/Topping.cpp" />
 		<Unit filename="src/repository/DrinksRepository.cpp" />
 		<Unit filename="src/repository/LocationsRepository.cpp" />
+		<Unit filename="src/repository/Order_repository.cpp" />
 		<Unit filename="src/repository/Pizza_repository.cpp" />
 		<Unit filename="src/repository/Topping_Repository.cpp" />
 		<Unit filename="src/services/DrinksService.cpp" />
