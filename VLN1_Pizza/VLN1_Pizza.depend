@@ -58,7 +58,7 @@
 1513103574 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\ui\mainui.cpp
 	"MainUI.h"
 
-1512924639 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\topping.cpp
+1513209616 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\topping.cpp
 	"Topping.h"
 
 1512924457 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\models\topping.h
@@ -66,10 +66,10 @@
 	<vector>
 	<string>
 
-1513120706 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\pizza.cpp
+1513209616 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\pizza.cpp
 	"Pizza.h"
 
-1513120706 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\models\pizza.h
+1513209616 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\models\pizza.h
 	"Topping.h"
 	<iostream>
 	<vector>
@@ -347,7 +347,7 @@
 1513011491 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\exceptions\invalid_price_exception.cpp
 	"Invalid_price_exception.h"
 
-1513166029 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\order.cpp
+1513209616 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\models\order.cpp
 	"Order.h"
 
 1513120143 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\models\order.h
@@ -355,10 +355,10 @@
 	"Drinks.h"
 	"Locations.h"
 
-1513103574 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\repository\pizza_repository.cpp
+1513209616 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\repository\pizza_repository.cpp
 	"Pizza_repository.h"
 
-1513103574 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\repository\topping_repository.cpp
+1513209616 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\repository\topping_repository.cpp
 	"Topping_Repository.h"
 
 1513011491 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\services\pizza_service.cpp
@@ -401,6 +401,15 @@
 	"Order_repository.h"
 
 1513183228 c:\users\ballioli\desktop\verkefni_pizza\pizzaplace\vln1_pizza\include\repository\order_repository.h
+	<fstream>
+	<vector>
+	<cstdlib>
+	"Order.h"
+
+1513209616 source:c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\src\repository\order_repository.cpp
+	"Order_repository.h"
+
+1513209616 c:\users\notandi\desktop\vln_pizza_project\pizzaplace\vln1_pizza\include\repository\order_repository.h
 	<fstream>
 	<vector>
 	<cstdlib>
