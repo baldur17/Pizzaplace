@@ -1,3 +1,2 @@
-Pepperoni,250,
 pepperoni,350,
 ananas,200,
