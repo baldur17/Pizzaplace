@@ -1,2 +1,2 @@
-s,1200,coke,2L,200,Akureyri,undirhlid,r,
-s,1200,coke,2L,200,Akureyri,undirhlid,n,
+s,1200,coke,2L,200,Akureyri,undirhlid,r,7781779,
+s,1200,coke,2L,200,Akureyri,undirhlid,n,4625525,

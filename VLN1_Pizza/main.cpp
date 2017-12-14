@@ -15,12 +15,14 @@ using namespace std;
 
 int main()
 {
+    ///allt í main er eingöngu til að prófa
     Order_repository o_repo;
     vector<Order> o;
     vector<vector<Topping> > t;
     t = o_repo.fill_topping_order_vector();
     ///t er vector af vectorum af topping
     o = o_repo.fill_order_vector();
+    cout << o[0].getPhone_number();
     ///o er vector af orders
     for (unsigned int i = 0; i < o.size(); i++)
     {

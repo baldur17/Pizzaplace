@@ -144,7 +144,7 @@ Order Order_repository::parse_string(string line)
     flag = temp[7][0];
     Locations l(temp[5], temp[6]);
     Drinks d(temp[2], temp[3], drink_price);
-    Order o(temp_pizza, d, l, flag);
+    Order o(temp_pizza, d, l, flag, temp[8]);
 
     return o;
 }

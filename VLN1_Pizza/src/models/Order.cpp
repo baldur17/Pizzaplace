@@ -4,12 +4,17 @@ Order::Order()
 {
     flag = 'n';
 }
-Order::Order(Pizza pizza, Drinks drink, Locations location, char flag)
+Order::Order(Pizza pizza, Drinks drink, Locations location, char flag, string phone_number)
 {
     this->pizza = pizza;
     this->drink = drink;
     this->location = location;
     this->flag = flag;
+    this->phone_number = phone_number;
+}
+string Order::getPhone_number()
+{
+    return phone_number;
 }
 Pizza Order::getPizza()
 {
@@ -30,6 +35,10 @@ char Order::getFlag()
 void Order::setPizza(Pizza pizza)
 {
     this->pizza = pizza;
+}
+void Order::setPhone_number(string phone_number)
+{
+    this->phone_number = phone_number;
 }
 void Order::setDrink(Drinks drink)
 {
