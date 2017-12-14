@@ -14,3 +14,7 @@ bool DrinksService::isValidPrice(const Drinks& drink) {
     }
     return true;
 }
+vector<Drinks> DrinksService::fetch_drinks()
+{
+    return drinksRepo.fill_drinks_vector();
+}

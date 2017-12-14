@@ -32,7 +32,8 @@ char MainUI::validate_user_input(char input)
 
         }
     if (input == '3'){
-
+            BakerUI bakerui;
+            bakerui.selectLocation();
         }
     if (input == '4'){
 

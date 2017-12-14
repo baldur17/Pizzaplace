@@ -10,7 +10,7 @@ void DrinksRepository::addDrink(const Drinks& drinks) {
         fout.close();
     }
 }
-vector<Drinks> DrinksRepository::fill_locations_vector()
+vector<Drinks> DrinksRepository::fill_drinks_vector()
 {
     string line;
     ifstream fin;
@@ -44,7 +44,7 @@ Drinks DrinksRepository::parse_string(string line)
             property += line[i];
         }
     }
-    price = atoi(temp[0].c_str());
+    price = atoi(temp[2].c_str());
     Drinks d(temp[0], temp[1], price);
     return d;
 }

@@ -1,2 +1,4 @@
-s,1200,coke,2L,200,Akureyri,undirhlid,r,7781779,
-s,1200,coke,2L,200,Akureyri,undirhlid,n,4625525,
+s,1200,coke,2L,200,akureyri,kaupangur,r,7781779,
+s,1200,coke,2L,200,reykjavik,ingolfstraeti,n,4625525,
+l,1800,fanta,L,350,akureyri,aupangur,n,7781779,
+s,900,fanta,L,350,reykjavik,ngolfsstraeti,n,7781779,

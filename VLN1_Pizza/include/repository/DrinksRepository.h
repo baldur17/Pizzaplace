@@ -10,7 +10,7 @@ class DrinksRepository
     public:
         void addDrink(const Drinks& drink);
         Drinks parse_string(string line);
-        vector<Drinks> fill_locations_vector();
+        vector<Drinks> fill_drinks_vector();
     private:
         vector<Drinks> vector_of_drinks;
 };

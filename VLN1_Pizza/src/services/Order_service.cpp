@@ -13,7 +13,12 @@ vector<Order> Order_service::retrieve_order_with_topping()
         p_temp = order_vector[i].getPizza();
         p_temp.setTopping(topping_vector[i]);
         order_vector[i].setPizza(p_temp);
-        cout << order_vector[i].getPizza() << endl;
     }
     return order_vector;
+}
+void Order_service::add_order_to_file(Order order)
+{
+    Order_repository repo_temp;
+    repo_temp.order_to_file(order);
+
 }

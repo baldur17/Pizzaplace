@@ -8,6 +8,7 @@ class LocationsService {
 
     public:
         void addLocation(const Locations& location);
+        vector<Locations> fetch_location();
 
     private:
         LocationsRepository locationsRepo;

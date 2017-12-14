@@ -12,6 +12,7 @@ class Pizza_service
     public:
         void write_pizza(Pizza p);
         void validate_size(char size);
+        vector<Pizza> fetch_base_pizza();
     private:
         Pizza_repository p_repo;
 };

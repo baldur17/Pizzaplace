@@ -15,3 +15,9 @@ void Pizza_service::validate_size(char size)
     }
     ///a eftir að implementa að remova duplicates
 }
+vector<Pizza> Pizza_service::fetch_base_pizza()
+{
+    vector<Pizza> p;
+    p = p_repo.fill_basepizza_vector();
+    return p;
+}

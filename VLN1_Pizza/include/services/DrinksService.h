@@ -9,6 +9,7 @@ class DrinksService
 {
     public:
         void addDrink(const Drinks& drinks);
+        vector<Drinks> fetch_drinks();
 
     private:
         DrinksRepository drinksRepo;

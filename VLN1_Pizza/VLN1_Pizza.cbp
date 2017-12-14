@@ -59,8 +59,10 @@
 		<Unit filename="include/repository/Topping_Repository.h" />
 		<Unit filename="include/services/DrinksService.h" />
 		<Unit filename="include/services/LocationsService.h" />
+		<Unit filename="include/services/Order_service.h" />
 		<Unit filename="include/services/Pizza_service.h" />
 		<Unit filename="include/services/Topping_service.h" />
+		<Unit filename="include/ui/BakerUI.h" />
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="include/ui/ManagementUI.h" />
 		<Unit filename="include/ui/SalesUI.h" />
@@ -80,8 +82,10 @@
 		<Unit filename="src/repository/Topping_Repository.cpp" />
 		<Unit filename="src/services/DrinksService.cpp" />
 		<Unit filename="src/services/LocationsService.cpp" />
+		<Unit filename="src/services/Order_service.cpp" />
 		<Unit filename="src/services/Pizza_service.cpp" />
 		<Unit filename="src/services/Topping_service.cpp" />
+		<Unit filename="src/ui/BakerUI.cpp" />
 		<Unit filename="src/ui/MainUI.cpp" />
 		<Unit filename="src/ui/ManagementUI.cpp" />
 		<Unit filename="src/ui/SalesUI.cpp" />

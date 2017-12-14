@@ -10,6 +10,7 @@ class Order_service
 {
     public:
         vector<Order> retrieve_order_with_topping();
+        void add_order_to_file(Order order);
     private:
         Order_repository order_repo;
 
