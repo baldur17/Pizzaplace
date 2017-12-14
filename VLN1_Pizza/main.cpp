@@ -4,18 +4,18 @@
 #include <Order.h>
 
 
-///muna taka ut, nota til ad testa;
+/*///muna taka ut, nota til ad testa;
 #include <Pizza.h>
 #include <Topping.h>
 #include <vector>
 #include <Order.h>
-#include <Order_repository.h>
+#include <Order_repository.h>*/
 
 using namespace std;
 
 int main()
 {
-    ///allt í main er eingöngu til að prófa
+    /*///allt í main er eingöngu til að prófa
     Order_repository o_repo;
     vector<Order> o;
     vector<vector<Topping> > t;
@@ -40,7 +40,7 @@ int main()
         ///þvi við munum ekki nota cout á pizzu til að syna a skja
         ///freka cout á akveðna breytu sem við viljum t.d cout << "pizza".getPrice() etc
     }
-    system("pause");
+    system("pause");*/
     MainUI mainui;
     mainui.startUI();
 

@@ -111,7 +111,6 @@ Drinks ManagementUI::create_drinks()
     cin.ignore();
     getline(cin, brand);
     cout << "\tEnter Size: ";
-    cin.ignore();
     getline(cin, size);
     cout << "\tEnter Price: ";
     cin >> price;

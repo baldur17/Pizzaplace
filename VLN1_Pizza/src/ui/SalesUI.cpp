@@ -21,7 +21,7 @@ void SalesUI::startUI()
 char SalesUI::validate_user_input(char input)
 {
     if (input == '1'){
-
+            order_service.retrieve_order_with_topping();
         }
     if (input == '2'){
 

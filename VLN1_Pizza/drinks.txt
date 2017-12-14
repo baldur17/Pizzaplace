@@ -1,2 +1,3 @@
 Coca,2L,200,
 coca cola,2L,250,
+fanta,2L,350,
