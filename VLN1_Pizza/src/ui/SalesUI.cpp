@@ -21,8 +21,6 @@ void SalesUI::startUI()
 char SalesUI::validate_user_input(char input)
 {
     if (input == '1'){
-            Order o;
-            ///o = create_order();
             create_order();
         }
     if (input == '2'){
@@ -45,24 +43,29 @@ char SalesUI::validate_user_input(char input)
 void SalesUI::create_order()
 {
     char flag = 'n';
+    int total_price;
     string phone_number;
     Pizza p;
     Drinks d;
     Locations l;
     p = add_base_pizza();
-    add_topping();
+    total_price = add_topping();
     d = add_drinks();
     l = add_location();
     cout << endl;
     cout << "\tEnter Customers Phone Number : ";
     cin >> phone_number;
+    cout << endl;
     Order o(p, d, l, flag, phone_number);
+    total_price = total_price + p.getPrice() + d.getPrice();
+    cout << "\tOrder Total Price: " << total_price;
     order_service.add_order_to_file(o);
 }
-void SalesUI::add_topping()
+int SalesUI::add_topping()
 {
     int input;
     char loop;
+    int topping_total_price = 0;
     vector<Topping> t_vector;
     vector<Topping> to_file;
     Topping_service t_service;
@@ -82,8 +85,12 @@ void SalesUI::add_topping()
         cout << "\tAdd Another Topping(y/n)? ";
         cin >> loop;
     }while(loop == 'y');
-
+    for(unsigned int j = 0; j < to_file.size(); j++)
+    {
+        topping_total_price = topping_total_price + to_file[j].getPrice();
+    }
     order_service.add_topping_to_file(to_file);
+    return topping_total_price;
 }
 Pizza SalesUI::add_base_pizza()
 {

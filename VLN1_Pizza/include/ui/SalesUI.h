@@ -24,7 +24,7 @@ class SalesUI
         Pizza add_base_pizza();
         Drinks add_drinks();
         Locations add_location();
-        void add_topping();
+        int add_topping();
     private:
         Order_service order_service;
 
