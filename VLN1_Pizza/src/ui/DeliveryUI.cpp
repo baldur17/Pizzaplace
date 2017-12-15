@@ -39,7 +39,7 @@ void DeliveryUI::startUI(Locations l)
         cout << "\t02. CHANGE ORDER STATUS" << endl << endl;
         cout << "\t03. BACK" << endl << endl;
         cout << "\t04. EXIT" << endl << endl;
-        cout << "\tSelect Your Option <1-3> ";
+        cout << "\tSelect Your Option <1-4> ";
         cin >> input;
         system("cls");
         validate_user_input(input, l);
