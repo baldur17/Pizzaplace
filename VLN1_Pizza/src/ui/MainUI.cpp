@@ -37,7 +37,7 @@ char MainUI::validate_user_input(char input)
         }
     if (input == '4'){
             DeliveryUI deliveryui;
-            deliveryui.startUI();
+            deliveryui.select_location();
 
         }
     if (input == '5'){

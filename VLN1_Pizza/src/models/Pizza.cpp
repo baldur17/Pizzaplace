@@ -42,13 +42,9 @@ void Pizza::setSize_price(int size_price)
 ostream& operator << (ostream& out, const Pizza& p)
 {
     out << p.pizza_size << "," << p.size_price << ",";
-    for (unsigned int i = 0; i < p.topping.size(); i++)
+    /*for (unsigned int i = 0; i < p.topping.size(); i++)
     {
         cout << p.topping[i].getName() << "," << p.topping[i].getPrice() << "," << endl;
-    }
-    /*if (p.topping.size() == 0)
-    {
-        out << endl;
     }*/
     return out;
 }

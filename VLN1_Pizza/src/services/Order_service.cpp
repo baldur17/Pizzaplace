@@ -27,3 +27,12 @@ void Order_service::add_topping_to_file(vector<Topping> toppings)
     Order_repository repo_temp;
     repo_temp.topping_to_file(toppings);
 }
+vector<Order> Order_service::retrieve_order()
+{
+    Order_repository o_repo;
+    return o_repo.fill_order_vector();
+}
+void Order_service::overwrite_order_file(vector<Order> o)
+{
+    order_repo.overwrite_order_file(o);
+}

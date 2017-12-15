@@ -12,6 +12,8 @@ class Order_service
         vector<Order> retrieve_order_with_topping();
         void add_topping_to_file(vector<Topping> toppings);
         void add_order_to_file(Order order);
+        vector<Order> retrieve_order();
+        void overwrite_order_file(vector<Order> o);
     private:
         Order_repository order_repo;
 

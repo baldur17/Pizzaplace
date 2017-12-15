@@ -34,19 +34,27 @@ vector<vector<Topping> > Order_repository::fill_topping_order_vector()
         vector_of_topping_order.clear();
         while(getline(fin, line))
         {
-            //vector_of_topping_order.push_back(parse_topping_string(line));
             vector<Topping> temp_topping_storage;
             temp_topping_storage = parse_topping_string(line);
-            //for (unsigned int i = 0; i < temp_topping_storage.size(); i++)
-            //{
-                vector<Topping> top;
-                top = temp_topping_storage;
-                t.push_back(top);
-            //}
+            vector<Topping> top;
+            top = temp_topping_storage;
+            t.push_back(top);
         }
         fin.close();
     }
     return t;
+}
+void Order_repository::overwrite_order_file(vector<Order> o)
+{
+    ofstream fout;
+    fout.open("order.txt", ios::trunc);
+    if(fout.is_open()){
+        for(unsigned int i = 0; i < o.size(); i++)
+        {
+            fout << o[i];
+        }
+    }
+    fout.close();
 }
 vector<Topping> Order_repository::parse_topping_string(string line)
 {

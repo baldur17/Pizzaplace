@@ -9,7 +9,7 @@ void DrinksService::addDrink(const Drinks& drink) {
 ///muna checka hvort invalid_price virkar
 bool DrinksService::isValidPrice(const Drinks& drink) {
     int price = drink.getPrice();
-    if (price <= 0) {
+    if (price < 0) {
         throw Invalid_price_exception();
     }
     return true;

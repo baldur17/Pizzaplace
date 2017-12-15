@@ -15,6 +15,7 @@ class Order_repository
         vector<vector<Topping> > fill_topping_order_vector();
         vector<Topping> parse_topping_string(string line);
         vector<Topping> getVector_of_topping_order();
+        void overwrite_order_file(vector<Order> o);
     private:
         vector<Order> vector_of_order;
         vector<Topping> vector_of_topping_order;

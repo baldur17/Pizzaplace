@@ -1,2 +1,3 @@
 akureyri,kaupangur,
-reykjavik,ingolfsstraeti,
+akureyri,undirhlid,
+reykjavik,skulagata,

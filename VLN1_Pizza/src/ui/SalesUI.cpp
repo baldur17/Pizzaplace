@@ -3,16 +3,14 @@
 void SalesUI::startUI()
 {
     char input = '0';
-    while(input != '5')
+    while(input != '3')
     {
         cout << endl;
         cout << "\tSALES MENU" << endl << endl;
         cout << "\t01. PLACE ORDER" << endl << endl;
-        cout << "\t02. PLACEHOLDER" << endl << endl;
-        cout << "\t03. PLACEHOLDER" << endl << endl;
-        cout << "\t04. PLACEHOLDER" << endl << endl;
-        cout << "\t05. EXIT" << endl << endl;
-        cout << "\tSelect Your Option <1-5> ";
+        cout << "\t02. BACK" << endl << endl;
+        cout << "\t03. EXIT" << endl << endl;
+        cout << "\tSelect Your Option <1-3> ";
         cin >> input;
         system("cls");
         validate_user_input(input);
@@ -22,17 +20,14 @@ char SalesUI::validate_user_input(char input)
 {
     if (input == '1'){
             create_order();
+            return '1';
         }
     if (input == '2'){
-            order_service.retrieve_order_with_topping();
+            MainUI mainui;
+            mainui.startUI();
+            return '2';
         }
     if (input == '3'){
-
-        }
-    if (input == '4'){
-
-        }
-    if (input == '5'){
             exit(0);
         }
     else{

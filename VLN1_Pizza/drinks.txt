@@ -1,3 +1,5 @@
-Coca,2L,200,
-coca cola,2L,250,
-fanta,2L,350,
+coke,1l,200,
+coke,2l,300,
+fanta,1l,200,
+fanta,2l,300,
+non,non,0,
