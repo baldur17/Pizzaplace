@@ -1,3 +1,3 @@
-s,1000,coke,2l,300,akureyri,kaupangur,d,8461111,
+s,1000,coke,2l,300,akureyri,kaupangur,n,8461111,
 l,2000,coke,1l,200,akureyri,undirhlid,r,8461112,
 m,1500,non,non,0,reykjavik,skulagata,n,8461113,

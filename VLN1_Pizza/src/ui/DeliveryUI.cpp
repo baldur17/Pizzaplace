@@ -77,6 +77,7 @@ void DeliveryUI::change_flag(Locations l)
     vector<int> counter;
     string city = l.getCity();
     string street = l.getStreet();
+    system("pause");
 
     Order_service order;
     o = order.retrieve_order_with_topping();
