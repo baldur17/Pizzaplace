@@ -16,6 +16,7 @@ class Topping_service
         void write_topping(Topping t);
         void validate_name(string name);
         void validate_price(int price);
+        vector<Topping> fetch_toppings();
     private:
         Topping_Repository t_repository;
 };

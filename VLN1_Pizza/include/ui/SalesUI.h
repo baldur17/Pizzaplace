@@ -10,6 +10,7 @@
 #include "Pizza_service.h"
 #include "DrinksService.h"
 #include "LocationsService.h"
+#include "Topping_service.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ class SalesUI
         Pizza add_base_pizza();
         Drinks add_drinks();
         Locations add_location();
+        void add_topping();
     private:
         Order_service order_service;
 

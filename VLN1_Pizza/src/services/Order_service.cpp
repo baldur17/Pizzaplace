@@ -22,3 +22,8 @@ void Order_service::add_order_to_file(Order order)
     repo_temp.order_to_file(order);
 
 }
+void Order_service::add_topping_to_file(vector<Topping> toppings)
+{
+    Order_repository repo_temp;
+    repo_temp.topping_to_file(toppings);
+}

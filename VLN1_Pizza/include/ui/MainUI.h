@@ -4,6 +4,7 @@
 #include "ManagementUI.h"
 #include "SalesUI.h"
 #include "BakerUI.h"
+#include "DeliveryUI.h"
 
 #include <stdlib.h>
 #include <iostream>

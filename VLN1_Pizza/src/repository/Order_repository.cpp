@@ -125,17 +125,6 @@ Order Order_repository::parse_string(string line)
     base_price = atoi(temp[1].c_str());
     temp_pizza.setSize_price(base_price);
     drink_price = atoi(temp[4].c_str());
-
-
-   /* vector<Topping> topping_vector;
-    int counter = 0;
-
-    for (unsigned int j = 0; j <= topcnt; j += 2)
-    {
-        Topping t(temp[2 + j], temp[2 + j + 1])
-        topping_vector.push_back()
-
-    }*/
     ///brand = temp[2]
     ///size(drink) = temp[3]
     ///city = temp[5]

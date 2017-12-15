@@ -1,2 +1,4 @@
 pepperoni,200,skinka,200,
 ananas,200,
+jalapeno,300,pineapple,200,
+pepperoni,350,

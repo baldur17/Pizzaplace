@@ -1,2 +1,5 @@
 pepperoni,350,
-ananas,200,
+pineapple,200,
+jalapeno,300,
+ham,200,
+mushrooms,300,

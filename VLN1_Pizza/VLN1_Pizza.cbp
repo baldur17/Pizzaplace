@@ -63,6 +63,7 @@
 		<Unit filename="include/services/Pizza_service.h" />
 		<Unit filename="include/services/Topping_service.h" />
 		<Unit filename="include/ui/BakerUI.h" />
+		<Unit filename="include/ui/DeliveryUI.h" />
 		<Unit filename="include/ui/MainUI.h" />
 		<Unit filename="include/ui/ManagementUI.h" />
 		<Unit filename="include/ui/SalesUI.h" />
@@ -86,6 +87,7 @@
 		<Unit filename="src/services/Pizza_service.cpp" />
 		<Unit filename="src/services/Topping_service.cpp" />
 		<Unit filename="src/ui/BakerUI.cpp" />
+		<Unit filename="src/ui/DeliveryUI.cpp" />
 		<Unit filename="src/ui/MainUI.cpp" />
 		<Unit filename="src/ui/ManagementUI.cpp" />
 		<Unit filename="src/ui/SalesUI.cpp" />

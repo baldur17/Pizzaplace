@@ -23,3 +23,7 @@ void Topping_service::validate_name(string name)
         }
     }
 }
+vector<Topping> Topping_service::fetch_toppings()
+{
+    return t_repository.fill_topping_vector();
+}
